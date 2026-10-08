@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e9eef7;
     color: #222222;
     line-height: 1.5;
     padding: 64px;
@@ -15,6 +15,7 @@ body {
 a {
     text-decoration: none;
 }
+
 
 /* Cabeçalho */
 
@@ -25,20 +26,27 @@ a {
     width: 100%;
     height: 64px;
     padding: 0 40px;
-    background-color: #1e3a8a;
+    background-color: #172554;
     z-index: 100;
+    border-bottom: 4px solid #fbbf24;
 }
 
 .logo {
     float: left;
-    color: #ffd900;
+    color: #fbbf24;
     font-size: 1.4rem;
     line-height: 64px;
     font-weight: bold;
 }
 
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 .menu {
-    float: right;
+    float: center;
     list-style: none;
 }
 
@@ -51,10 +59,170 @@ a {
     padding: 0 16px;
     line-height: 64px;
     color: #ffffff;
+    font-weight: bold;
 }
 
 .menu a:hover {
-    background-color: #ffd900;
-    color: #1e3a8a;
-    font-weight: bold;
+    background-color: #fbbf24;
+    color: #172554;
 }
+
+
+/* Destaque */
+
+.hero {
+    padding: 110px 20px;
+    background-color: #2563eb;
+    background-image: linear-gradient(
+        rgba(23, 37, 84, 0.82),
+        rgba(37, 99, 235, 0.75)
+    ), url("../img/banner-brawl.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    color: #fbbf24;
+    text-transform: uppercase;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 28px auto;
+    font-size: 1.1rem;
+}
+
+.botao {
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: #f97316;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 3px solid #fb923c;
+}
+
+.botao:hover {
+    background-color: #fbbf24;
+    color: #172554;
+    border-color: #fbbf24;
+}
+
+
+/* Seções */
+
+.secao {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px 40px 20px;
+}
+
+.secao h2 {
+    color: #172554;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+/* Cards */
+
+.card {
+    float: left;
+    width: 48%;
+    margin: 0 1% 30px 1%;
+    padding: 20px;
+    border: 3px solid #cbd5e1;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 0 #cbd5e1;
+}
+
+.card:hover {
+    border-color: #fbbf24;
+    box-shadow: 0 6px 0 #fbbf24;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.card p {
+    color: #444444;
+}
+
+
+/* Limpar float */
+
+.limpa::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* Campeonato */
+
+.campeonato {
+    max-width: none;
+    background-color: #172554;
+    color: #ffffff;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.campeonato h2 {
+    color: #fbbf24;
+}
+
+.campeonato > p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+/* Cards do campeonato */
+
+.campeonato .card {
+    background-color: #ffffff;
+    border-color: #2563eb;
+}
+
+.campeonato .card h3 {
+    color: #f97316;
+}
+
+
+/* Rodapé */
+
+#contato {
+    margin-top: 40px;
+    padding: 40px 20px;
+    background-color: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    border-top: 5px solid #fbbf24;
+}
+
+#contato h2 {
+    color: #fbbf24;
+    margin-bottom: 15px;
+}
+
+/* validado no W3C */
